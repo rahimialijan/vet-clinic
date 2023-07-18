@@ -11,3 +11,8 @@ date_of_birth DATE NOT NULL,
 escape_attempts SERIAL NOT NULL,
 neutered BOOLEAN NOT NULL,
  weight_kg DECIMAL(10, 2) NOT NULL);
+
+
+ --- Add new column on the animals table
+ ALTER TABLE animals
+ADD COLUMN species VARCHAR(100);
