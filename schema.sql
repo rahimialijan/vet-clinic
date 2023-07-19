@@ -16,3 +16,29 @@ neutered BOOLEAN NOT NULL,
  --- Add new column on the animals table
  ALTER TABLE animals
 ADD COLUMN species VARCHAR(100);
+
+---Create owners table
+ CREATE TABLE owners (
+ id BIGSERIAL PRIMARY KEY,
+full_name VARCHAR (100),
+age BIGINT);
+CREATE TABLE
+
+---- Create species table	   
+CREATE TABLE species (
+ id BIGSERIAL PRIMARY KEY,
+name VARCHAR (100) NOT NULL);
+		   
+----Remove species column from animals table
+ALTER TABLE animals
+ DROP species;
+
+----referencing species
+ALTER TABLE animals
+ADD COLUMN species_id INTEGER REFERENCES species (id);
+ALTER TABLE
+
+--------referencing the owners
+ ALTER TABLE animals
+ ADD COLUMN owner_id INTEGER REFERENCES owners (id);
+ALTER TABLE
