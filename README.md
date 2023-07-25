@@ -40,7 +40,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Database Schema
 
-![image]()
+![image](https://github.com/rahimialijan/vet-clinic/blob/database-schema-diagram/Database_Diagram.JPG)
 
 ## 🛠 Built With <a name="built-with"></a>
 
